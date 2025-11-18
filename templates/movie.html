@@ -1,0 +1,30 @@
+<html>
+	<title>My Favorite Movies</title>
+<body>
+	<div style="text-align: center;">
+		<h1>Movies Table</h1>
+		<table style="margin: auto; width: 80%; border-collapse: collapse: border: 1px solid black" >
+			<thead>
+				<tr>
+					{% for col in table[0].keys() %}
+					<th style="text-align: center; border: 1px solid black; padding: 8px;">
+						{{ col }}
+					</th>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tbody>
+				{% for row in table %}
+				<tr>
+					{% for val in row.values() %}
+						<td style="text-align: center; border: 1px solid black; padding: 8px;">
+							{{ val }}
+						</td>
+					{% endfor%}
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>	
+</body>
+</html>
