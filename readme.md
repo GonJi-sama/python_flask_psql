@@ -36,9 +36,10 @@ touch libraryforqueydata
 
 in templates directory create HTML necessary file for 2 webpage
 
-'''bash
+```bash
  touch firstpage.html
  touch secondpage.html
-'''
+```
+
 
  
